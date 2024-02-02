@@ -72,6 +72,19 @@ inquirer
         }
     },
     {
+        message: "Enter usage information.",
+        name: "contributing",
+        type: "input",
+        validate: contributingInput => {
+            if ("contributingInput") {
+            return true;
+            console.log("SUCCESS"); 
+            }else {
+            console.log("PLEASE ENTER INFORMATION ON HOW OTHERS CAN CONTRIBUTE TO YOUR PROJECT");
+            };
+        }
+    },
+    {
         message: "Please choose what license you would like to use.",
         name: "list",
         choices: ["MIT", "Apache", "SIL"],
