@@ -74,7 +74,7 @@ inquirer
     {
         message: "Please choose what license you would like to use.",
         name: "list",
-        choices: ["MIT", "GPL", "BSL", "Ms-PL"],
+        choices: ["MIT", "Apache", "SIL"],
         type: "input",
         validate: listInput => {
             if ("listInput") {
