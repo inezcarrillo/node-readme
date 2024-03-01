@@ -8,7 +8,7 @@ inquirer
     .prompt ([
     {
         message: "What is the name of your project?",
-        title: "title",
+        name: "title",
         type: "input",
         validate: titleInput => {
             if ("titleInput") {
